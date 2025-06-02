@@ -24,46 +24,39 @@
     </style>
   </head>
   <body>
-    <section id="form">
-      <span>Contact Us</span>
+    <div id="form">
+      
       <form action="#" method="post">
-        <section class="teste">
-          <div class="infor">
-            <label for="text">First Name *</label>
-            <input type="text" />
-          </div>
-          <div class="infor">
-            <label for="text">Last Name *</label>
-            <input type="text" />
-          </div>
-        </section>
+        <h1>Contact Us</h1>
 
-        <section>
+        <div class="infor">       
+          <div class="field">
+              <label for="text">First Name *</label>
+              <input type="text" />
+          </div>
+          <div class="field">
+              <label for="text">Last Name *</label>
+              <input type="text" />
+          </div>
+        </div>
+        
+        
           <label for="text" id="email">Email Address *</label>
           <input type="text" />
-        </section>
-
-        <section>
           <label for="text" class="teste">Query Tipe *</label>
+          <input type="checkbox" />
           <input type="checkbox" />
           <label for="text">Genral Enquiry</label>
           <input type="checkbox" />
           <label for="text">Support Request</label>
-        </section>
-
-        <section class="teste">
           <label type="text">Message *</label>
-          <input type="text" />
-        </section>
-
-        <section>
+          <textarea id="mensagem" name="mensagem" type="text" placeholder="Digite sua mensagem...">
+          </textarea>
           <input type="checkbox" />
           <label for="text">I consent to being contacted by the team *</label>
-        </section>
-
-        <button type="submit">Submit</button>
+          <button type="submit">Submit</button>
       </form>
-    </section>
+    </div>
   </body>
   <footer>
     Contact Us First Name This field is required Last Name This field is
