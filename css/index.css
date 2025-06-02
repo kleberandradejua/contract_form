@@ -1,0 +1,40 @@
+body {
+  background-color: hsl(148, 38%, 91%);
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  height: 55vh;
+  margin: 0;
+}
+#form {
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 20px;
+  height: 30vh;
+  margin: 55vh;
+  padding: 5px;
+  border: black solid 2px;
+}
+.teste {
+  display: flex;
+  flex: 1;
+}
+.infor {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  align-items: center;
+  min-width: 200px;
+  height: 5vh;
+  margin: 5px;
+  padding: 2px;
+}
+section > #email {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
