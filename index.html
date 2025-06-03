@@ -30,31 +30,31 @@
 
         <div class="infor">
           <div class="field">
-            <label for="text">First Name *</label>
-            <input type="text" class="full-width" />
+            <label for="first-name">First Name *</label>
+            <input type="text" id="first-name" class="full-width" />
           </div>
           <div class="field">
-            <label for="text">Last Name *</label>
-            <input type="text" class="full-width" />
+            <label for="last-name">Last Name *</label>
+            <input type="text" id="last-name" class="full-width" />
           </div>
         </div>
 
-        <label for="text" id="email">Email Address *</label>
-        <input type="text" class="full-width" />
+        <label for="email-address" id="email">Email Address *</label>
+        <input type="text" id="email-address" class="full-width" />
 
         <label for="text" class="teste">Query Tipe *</label>
         <div class="query-type">
           <div class="query-type-field">
-            <input type="radio" name="option" />
-            <label for="text">Genral Enquiry</label>
+            <input type="radio" id="enquiry" name="option" />
+            <label for="enquiry">Genral Enquiry</label>
           </div>
           <div class="query-type-field">
-            <input type="radio" name="option" />
-            <label for="text">Support Request</label>
+            <input type="radio" id="support" name="option" />
+            <label for="support">Support Request</label>
           </div>
         </div>
 
-        <label type="text">Message *</label>
+        <label for="mensagem">Message *</label>
         <textarea
           id="mensagem"
           name="mensagem"
@@ -63,8 +63,10 @@
         ></textarea>
 
         <div>
-          <input type="checkbox" />
-          <label for="text">I consent to being contacted by the team *</label>
+          <input type="checkbox" id="consent" />
+          <label for="consent"
+            >I consent to being contacted by the team *</label
+          >
         </div>
 
         <button type="submit">Submit</button>
