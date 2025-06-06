@@ -22,6 +22,7 @@
         color: hsl(228, 45%, 44%);
       }
     </style>
+    <script src="js/index.js" defer></script>
   </head>
   <body>
     <div id="form">
@@ -39,9 +40,10 @@
           </div>
         </div>
 
-        <label for="email-address" id="email">Email Address *</label>
-        <input type="text" id="email-address" class="full-width" />
-
+        <div>
+          <label for="email-address" id="email">Email Address *</label>
+          <input type="text" id="email-address" class="full-width" />
+        </div>
         <label for="text" class="teste">Query Tipe *</label>
         <div class="query-type">
           <div class="query-type-field">
@@ -69,7 +71,8 @@
           >
         </div>
 
-        <button type="submit">Submit</button>
+        <button type="submit" id="submit">Submit</button>
+        <div id="errormessage" class="erro"></div>
       </form>
     </div>
   </body>
