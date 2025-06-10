@@ -10,17 +10,21 @@ const msgerror = document.getElementById("errormessage");
 validationbtn.addEventListener("click", () => {
   event.preventDefault();
   msgerror.textContent = "";
+  let valido = true;
 
-  if (
-    !firstname.value.trim() ||
-    !secondname.value.trim() ||
-    !email.value.trim()
-  ) {
+  [firstname, secondname, email].forEach((campo) => {
+    if (!campo.value.trim()) {
+      campo.classList.add("no-field");
+      valido = false;
+    } else {
+      campo.classList.remove("no-field");
+    }
+  });
+
+  if (!valido) {
     msgerror.textContent = "Para prosseguir preencha todos os campos!";
     return;
   }
-
-  alert("Todos os campos preenchidos");
 });
 
 function validateemail(email) {

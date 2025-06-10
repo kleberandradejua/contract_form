@@ -43,7 +43,7 @@ form {
   flex-direction: column;
   flex: 1;
 }
-.full-width {
+.fullwidth {
   width: 100%;
   height: 30px;
 }
@@ -82,4 +82,7 @@ button {
 }
 .erro {
   color: red;
+}
+.no-field {
+  border: 2px solid red;
 }
